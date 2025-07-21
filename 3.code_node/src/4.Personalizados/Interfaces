@@ -1,0 +1,10 @@
+//Interfaces
+interface Product {
+  readonly id: number; // readonly evita que se modifique una propiedad después de asignarla.
+  nombre: string;
+  precio: number;
+  descuento?: number; // Usa ? para indicar que una propiedad puede o no estar presente.
+  comprar: (cantidad: number) => number;
+  baja: () => void;
+  actualizar(): boolean;
+}
